@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Piotr Zdybel IFT UW</title>
+	<meta name="description" content="Piotr Zdybel IFT UW">
+
+	<link href="minimal.css" rel="stylesheet">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<div class="container">
+	<header>
+<i><strong><a class="logo" href="index.html">Piotr Zdybel</a></strong></i>
+		<!--<nav class="float-right">-->
+		<nav class="float-right">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="research.html">Badania</a></li>
+				<li><a href="teaching.html">Dydaktyka</a></li>
+				<li><a href="notes.html">Notatki</a></li>
+				<li><a href="index_eng.html">[ENG]</a></li>
+				<!--<li><a href="outreach.html">Science outreach</a></li>-->
+			</ul>
+		</nav>
+	</header>
+
+	<div class="row"><div class="col-12"><img class="center" src="https://www.fuw.edu.pl/~pzdybel/img/termo.jpg"></div></div>
+
+<center><h1>Podstawy fizyki IV</h1></center>
+<center><h2>Termodynamika i elementy fizyki statystycznej</h2></center>
+<center><h3>rok akademicki 2019/20, semestr letni</h3></center>
+<hr>
+<!--<center>-<a href="http://www.fuw.edu.pl/~witek/kwantyIIb/">Strona wykładu</a>-</center><br>-->
+<!--<center><h3><font style="font-variant: small-caps;" color="red">Test (internetowy) 27.06.2020 </font></h3><font  color="red"><strong>ZADANIA (czas trwania egzaminu: 10:00-11:00) [<a href="PFIV_test01.pdf">PDF</a>] </strong></font></center><br>
+<center><font  color="red"><strong>Rozwiązania możesz wysłać na mail  <a href="mailto:p.zdybel@uw.edu.pl">p.zdybel@uw.edu.pl</a><br> (UWAGA! zmiana adresu maila na który macie przesłać rozwiązania i pamiętajcie, aby przesłać je z adresu xxxxxx@student.uw.edu.pl)</strong></font></center></center><br><br>
+
+<div data-type="countdown" data-id="2053707" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%"><a href="//www.tickcounter.com/countdown/2053707/do-konca-testu-pozostao" title="Do końca testu pozostało:">Do końca testu pozostało:</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>--><br><br>
+
+	<div class="row">
+		<div class="col-3">
+		 <h3> Konsultacje</h3>
+	  </div>
+		<div class="col-9">
+			<p>
+			 <strong>Notatki z konsultacji przed egzaminem</strong> [<a href="Konsultacje_PFIV.pdf">pdf</a>]<br></p>
+	
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3">
+		 <h3> Zadania z ćwiczeń</h3>
+	  </div>
+		<div class="col-9">
+			 <p><strong>Ćwiczenia 1</strong> (25.02.2020)<br>
+			 	<i>Dochodzenie do równowagi termicznej, rozszerzalność cieplna</i><br> 
+			 	Treść zadań [<a href="PFIV_cw01.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw01.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #1 [<a href="https://forms.gle/2HnNF9YQYiQsipoS8">link</a>]<br>-->
+			 	Plik Mathematica z wykresami do zadania 2 [<a href="cw01_zad2.nb">nb</a>]<br><br>
+
+
+				<strong>Ćwiczenia 2</strong> (3.03.2020)<br>
+				<i>Promieniowanie termiczne, prawo Stefana-Boltzmanna</i><br>  
+			 	Treść zadań [<a href="PFIV_cw02.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw02.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #2 [<a href="https://forms.gle/4k9gUCCMTVYarM9E7">link</a>]<br>-->
+			 	Plik z implementacją algorytmu Newtona w Pythonie (zad. 1 i 2) [<a href="newton.py">py</a>] <br>
+			 	Plik Mathematica z wykresami do zadania 1 i 2 [<a href="cw02_zad2.nb">nb</a>]<br>
+			 	Materiały uzupełniające:<br>
+			 	J. M. Marra i F. P. Willkina "A better presentation of Planck’s radiation law" <i>Am. J. Phys.</i> <strong>80</strong> (2012) 399 [<a href="marr2012.pdf">pdf</a>]
+			 	<br><br>
+
+			 	<strong>Ćwiczenia 3</strong> (10.03.2020)<br>
+			 	<i>Stała słoneczna, efekt cieplarniany, równowaga hydrostatyczna</i><br> 
+			 	Treść zadań [<a href="PFIV_cw03.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw03.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #3 [<a href="https://forms.gle/s9RG5xwoGXCBAzJf9">link</a>]<br>-->
+			 	Materiały uzupełniające:<br>  
+			 	Zong-Yang Liang "Chapter 2. The global energy balance" <i>Physical Climatology</i> (Univ. Texas) [<a href="climat.pdf">pdf</a>]
+			 	<br><br>
+
+				<strong>Ćwiczenia 4</strong> (17.03.2020)<br>
+				<i>Elementy teorii kinetycznej, równania stanu gazów rzeczywistych, punkt krytyczny</i><br>  
+			 	Treść zadań [<a href="PFIV_cw04.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw04.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #4 [<a href="https://forms.gle/cCgQASBCoVsHF3vL6">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 20.03.2020) [<a href="PFIV_cw04_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	H. S. Leff "Teaching the photon gas in introductory physics" <i>Am. J. Phys.</i> <strong>70</strong> (2002) 792 [<a href="leff2002.pdf">pdf</a>]<br>
+			 	R. J. Tykodi, E. P. Hummel "On the Equation of State for Gases" <i>Am. J. Phys.</i> <strong>41</strong> (1973) 340 [<a href="tykodi1973.pdf">pdf</a>]<br><br>
+
+			 	<strong>Ćwiczenia 5</strong> (24.03.2020)<br>
+				<i>Współczynniki materiałowe, ekstensywność, funkcje stanu i procesu, I zasada termodynamiki</i><br>  
+			 	Treść zadań [<a href="PFIV_cw05.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw05.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #5 [<a href="https://forms.gle/NrcTa516XFsRSLG46">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 10.04.2020) [<a href="PFIV_cw05_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	W. J. Gensler, O. Redlich „Intensive and extensive properties” <i>J. Chem. Educ.</i> <strong>47</strong> (1970) 154 [<a href="redlich1970.pdf">pdf</a>]<br>
+			 	S. G. Canagaratna „Intensive and extensive: Underused concepts” <i>J. Chem. Educ.</i> <strong>69</strong> (1992) 957 [<a href="canagaratna1992.pdf">pdf</a>]<br>
+			 	S. H.  Mannaerts "Extensive quantities in thermodynamics" <i>Eur. J. Phys.</i> <strong>35</strong> (2014) 035017 [<a href="mannaerts2014.pdf">pdf</a>]<br>
+			 	V. B. Tymchyshyn "Beginners guide to differential forms in thermodynamics" (2016) [<a href="DiffF.pdf">pdf</a>]<br>
+			 	J. de Heer "Some comments on the ’’axiomatic’’ formulation of the first law of
+                thermodynamics" <i>Am. J. Phys.</i> <strong>45</strong> (1977) 1225 [<a href="deheer1977.pdf">pdf</a>]<br>
+			 	H. Erlichson "Internal energy in the first law of thermodynamics" <i>Am. J. Phys.</i> <strong>52</strong> (1984) 623 [<a href="erlichson1984.pdf">pdf</a>]<br><br>
+
+			 	<strong>Ćwiczenia 6</strong> (31.03.2020)<br>
+				<i>Napięcie powierzchniowe, II zasada termodynamiki, tożsamości termodynamiczne, procesy nieodwracalne</i><br>  
+			 	Treść zadań [<a href="PFIV_cw06.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw06.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #6 [<a href="https://forms.gle/eAvzy9A9aHxCSLwh7">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 10.04.2020) [<a href="PFIV_cw06_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	H. S. Leff „Removing the Mystery of Entropy and
+				Thermodynamics. Part I” <i>Phys. Teach.</i> <strong>50</strong> (2012) 28 [<a href="leff2002a.pdf">pdf</a>]<br>
+				H. S. Leff „Removing the Mystery of Entropy and
+				Thermodynamics. Part II” <i>Phys. Teach.</i> <strong>50</strong> (2012) 87 [<a href="leff2002b.pdf">pdf</a>]<br>
+				H. S. Leff „Removing the Mystery of Entropy and
+				Thermodynamics. Part III” <i>Phys. Teach.</i> <strong>50</strong> (2012) 170 [<a href="leff2002c.pdf">pdf</a>]<br>
+				H. S. Leff „Removing the Mystery of Entropy and
+				Thermodynamics. Part IV” <i>Phys. Teach.</i> <strong>50</strong> (2012) 215 [<a href="leff2002d.pdf">pdf</a>]<br>
+				H. S. Leff „Removing the Mystery of Entropy and
+				Thermodynamics. Part V” <i>Phys. Teach.</i> <strong>50</strong> (2012) 274 [<a href="leff2002e.pdf">pdf</a>]<br>
+				H. A. Buchdahl „On the Principle of Carathéodory” <i>Am. J. Phys.</i> <strong>17</strong> (1949) 41 [<a href="buchdahl1949.pdf">pdf</a>]<br>
+			 	H. A. Buchdahl „Integrability Conditions and Carathéodory's Theorem” <i>Am. J. Phys.</i> <strong>22</strong> (1954) 182 [<a href="buchdahl1954.pdf">pdf</a>]<br>
+			 	C. Fernández-Pineda, S. Velasco „Application of thermodynamic extremum principles” <i>Am. J. Phys.</i> <strong>69</strong> (2001) 1160 [<a href="velasco2001.pdf">pdf</a>]<br>
+			 	B. Carroll „On the Use of Jacobians
+				in Thermodynamics” <i>J. Chem. Educ.</i> <strong>42</strong> (1965) 218  [<a href="carroll1965.pdf">pdf</a>]<br><br><br>
+
+				<strong>Ćwiczenia 7</strong> (7.04.2020)<br>
+				<i>Wklęsłość entropii, zasada minimum energii, zasada pracy maksymalnej, maszyny cieplne</i><br>  
+			 	Treść zadań [<a href="PFIV_cw07.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw07.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #7 [<a href="https://forms.gle/spDPxjyng13AepSt7">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 10.04.2020) [<a href="PFIV_cw07_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	H. S. Leff „Reversible and irreversible heat engine and refrigerator cycles” <i>Am. J. Phys.</i> <strong>86</strong> (2018) 344 [<a href="leff2018.pdf">pdf</a>]<br>
+			 	J. P. S. Bizarro „The thermodynamic efficiency of heat engines with friction” <i>Am. J. Phys.</i> <strong>80</strong> (2012) 298 [<a href="bizarro2012.pdf">pdf</a>]<br><br><br>
+
+
+				<strong>Ćwiczenia 8</strong> (21.04.2020)<br>
+				<i>Transformacja Legendre'a, potencjały termodynamiczne, warunki stabilności i reguła przekory Le Chateliera</i><br>  
+			 	Treść zadań [<a href="PFIV_cw08.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw08.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #8 [<a href="https://forms.gle/NHM1fwQtNSusqgxR7">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 1.05.2020) [<a href="PFIV_cw08_pyt.pdf">pdf</a>]<br>-->
+			 	Plik z implementacją Konstrukcji Maxwella w Pythonie (zad. 6) [<a href="maxwell.py">py</a>] [<a href="maxwell_fig.png">png</a>]<br>
+			 	Materiały uzupełniające:<br>
+			 	R. K. P. Zia, et al. „Making sense of the Legendre transform” <i>Am. J. Phys.</i> <strong>77</strong> (2009) 614 [<a href="zia2009.pdf">pdf</a>]<br>
+			 	J. Lekner „Parametric solution of the van der Waals liquid–vapor coexistence curve” <i>Am. J. Phys.</i> <strong>50</strong> (1982) 161 [<a href="lekner1982.pdf">pdf</a>]<br><br><br>
+
+
+				<strong>Ćwiczenia 9</strong> (28.04.2020)<br>
+				<i>III zasada termodynamiki, przemiany fazowe I i II rodzaju, para nasycona, równanie Clausiusa-Clapeyrona</i><br>  
+			 	Treść zadań [<a href="PFIV_cw09.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw09.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #9 [<a href="https://forms.gle/F1d32Lc8SG2RFzDbA">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 9.05.2020) [<a href="PFIV_cw09_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	Film: Explaining the Critical Point [<a href="https://www.youtube.com/watch?v=RmaJVxafesU">youtube</a>]<br>
+			 	Film: Explaining the Triple Point [<a href="https://www.youtube.com/watch?v=HEzkHqWIiKM">youtube</a>]<br>
+			 	Film: Phase Diagrams. Triple Points, Critical Points and Supercritical Fluids[<a href="https://www.youtube.com/watch?v=-5oq5CZlY8k">youtube</a>]<br>
+			 	M. Bailyn „Lambda versus first‐order transitions” <i>Am. J. Phys.</i> <strong>56</strong> (1988) 147 [<a href="bailyn1988.pdf">pdf</a>]<br>
+			 	D. R. Lovett, J. Tilley „Illustrating phase transitions with soap films” <i>Am. J. Phys.</i> <strong>59</strong> (1991) 415 [<a href="lovett1991.pdf">pdf</a>]<br><br><br>
+
+			 	<strong>Ćwiczenia 10</strong> (5.05.2020)<br>
+				<i>Mieszaniny, roztwory, zjawiska koligatywne, prawo działania mas, izobara van't Hoffa</i><br>
+			 	Treść zadań [<a href="PFIV_cw10.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw10.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #10 [<a href="https://forms.gle/3Y8EKSa9QCkm1AnU7">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 9.05.2020) [<a href="PFIV_cw10_pyt.pdf">pdf</a>]<br>-->
+			 	Plik Mathematica z wykresami do zadania 2 [<a href="cw10_zad2.nb">nb</a>]<br>
+			 	Materiały uzupełniające:<br>
+			 	R. P. Rastogi „Thermodynamics of Phase Equilibria and Phase Diagrams” <i>J. Chem. Educ.</i> <strong>47</strong> (1964) 443 [<a href="rastogi1964.pdf">pdf</a>]<br>
+			 	C. D. Mickey „Chemical Equilibrium” <i>J. Chem. Educ.</i> <strong>57</strong> (1980) 801 [<a href="mickey1980.pdf">pdf</a>]<br>
+			 	G. Jancso, D. V. Fenby „Thermodynamics of Dilute Solutions” <i>J. Chem. Educ.</i> <strong>60</strong> (1983) 382 [<a href="jancso1983.pdf">pdf</a>]<br>
+			 	R. Privat, et al. „Teaching the Concept of Gibbs Energy Minimization through Its Application to Phase-Equilibrium Calculation” <i>J. Chem. Educ.</i> <strong>93</strong> (2016) 1569 [<a href="privat2016.pdf">pdf</a>]<br><br><br>
+
+			 	<strong>Ćwiczenia 11</strong> (12.05.2020)<br>
+				<i>Przewodnictwo cieplne, dyfuzja, rozkład prędkości Maxwella-Boltzmanna</i><br>
+			 	Treść zadań [<a href="PFIV_cw11.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw11.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #11 [<a href="https://forms.gle/vHaorhe3zMSLnKgy9">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 20.06.2020) [<a href="PFIV_cw11_pyt.pdf">pdf</a>]<br>-->
+			 	Plik Mathematica z wykresami do zadania 1 [<a href="cw11_zad1.nb">nb</a>]<br>
+			 	Materiały uzupełniające:<br>
+			 	R. C. Whitten, P. T. McCormick „Elementary introduction to the Green’s function” <i>Am. J. Phys.</i> <strong>43</strong> (1975) 541 [<a href="whitten1975.pdf">pdf</a>]<br>
+			 	A. Walstad „On deriving the Maxwellian velocity distribution" <i>Am. J. Phys.</i> <strong>81</strong> (2013) 555 [<a href="walstad2013.pdf">pdf</a>]<br><br><br>
+
+			 	<strong>Ćwiczenia 12</strong> (20.05.2020)<br>
+				<i>Hipoteza ergodyczna, zespół mikrokanoniczny, granica termodynamiczna, zasada ekwipartycji energii</i><br>
+			 	Treść zadań [<a href="PFIV_cw12.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw12.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #12 [<a href="https://forms.gle/ogdCxNHpr9fVC8k9A">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 20.06.2020) [<a href="PFIV_cw12_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	A. V. Tobolsky „The Microcanonical Ensemble” <i>Am. J. Phys.</i> <strong>32</strong> (1964) 799 [<a href="tobolsky1964.pdf">pdf</a>]<br>
+			 	D. F. Styer „What good is the thermodynamic limit?” <i>Am. J. Phys.</i> <strong>72</strong> (2004) 25 [<a href="styer2004.pdf">pdf</a>]<br>
+			 	<br><br><br>
+
+
+			 	<strong>Ćwiczenia 13</strong> (26.05.2020)<br>
+				<i>Zespół kanoniczny, paradoks Gibbsa, termiczna długość fali de Brogile'a, gęstość stanów</i><br>
+			 	Treść zadań [<a href="PFIV_cw13.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw13.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #13 [<a href="https://forms.gle/XJCmj6z1zA78Dqov7">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 20.06.2020) [<a href="PFIV_cw13_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	V. Gurarie „The equivalence between the canonical and microcanonical ensembles when applied to large systems” <i>Am. J. Phys.</i> <strong>75</strong> (2007) 747 [<a href="tobolsky1964.pdf">pdf</a>]<br>
+			 	H. S. Leff „The Boltzmann reservoir: A model constant-temperature environment” <i>Am. J. Phys.</i> <strong>68</strong> (2000) 521 [<a href="leff2000.pdf">pdf</a>]
+			 	<br><br><br>
+
+			 	<strong>Ćwiczenia 14 - ostatnie!</strong> (2.06.2020)<br>
+				<i>Wielki zespół kanoniczny, kwantowe gazy doskonałe, granica klasyczna, poziom Fermiego</i><br>
+			 	Treść zadań [<a href="PFIV_cw14.pdf">pdf</a>]<br>
+			 	Notatki i rozwiązania [<a href="PF4_not_cw14.pdf">pdf</a>]<br>
+			 	<!--Formularz Google do zadawania pytań dotyczących materiału ćwiczeń #14 [<a href="https://forms.gle/KiNPBLDBm8yC2VHJ8">link</a>]<br>
+			 	Odpowiedzi na zadane za pośrednictwem formularza pytania (stan na: 20.06.2020) [<a href="PFIV_cw14_pyt.pdf">pdf</a>]<br>-->
+			 	Materiały uzupełniające:<br>
+			 	H. S. Leff „Fluctuations in particle number for a photon gas” <i>Am. J. Phys.</i> <strong>83</strong> (2015) 362 [<a href="leff2015.pdf">pdf</a>]<br>
+			 	F. Hynne „Quantum statistics of an ideal molecular gas” <i>Am. J. Phys.</i> <strong>49</strong> (1981) 125 [<a href="hynne1981.pdf">pdf</a>]<br><br><br>
+
+			</p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3">
+		 <h3> Zadania domowe </h3>
+	  </div>
+		<div class="col-9">
+<p><strong>W związku z epidemią koronawirusa COVID-19 zadania domowe stają się obowiązkowe i jedno z nich będzie zbierane we wtorki do godziny 20:00 poprzez wysłanie skanu lub zdjęcia (polecam aplikację <a href="https://play.google.com/store/apps/details?id=com.notebloc.app&hl=pl">NoteBloc</a>). Rozwiązania przesłane później nie będą sprawdzane. Numer zbieranego zadania będzie wysyłany mailem o godz. 15:00 dnia w którym będziecie je mieli wysłać. Zadania powinny być podpisane i zawierać komentarz. Zadania będą oceniane w skali od 0 do 1 punkta. Obowiązuje zasada zero słów to zero punktów.</strong><br><br></p>
+			  <p><strong>Seria 1</strong> (8.03.2020) [<a href="PFIV_seria01.pdf">pdf</a>] 
+			  	(termin oddania: 17.03.2020)<br>
+			  	<strong>Seria 2</strong> (13.03.2020) [<a href="PFIV_seria02.pdf">pdf</a>] 
+			  	(termin oddania: 24.03.2020)<br>
+			  	<strong>Seria 3</strong> (23.03.2020) [<a href="PFIV_seria03.pdf">pdf</a>] 
+			  	(termin oddania: 31.03.2020)<br>
+			  	<strong>Seria 4</strong> (31.03.2020) [<a href="PFIV_seria04.pdf">pdf</a>] 
+			  	(termin oddania: 7.04.2020)<br>
+			  	<strong>Seria 5</strong> (13.04.2020) [<a href="PFIV_seria05.pdf">pdf</a>] 
+			  	(termin oddania: 21.04.2020)<br>
+			  	<strong>Seria 6</strong> (21.04.2020) [<a href="PFIV_seria06.pdf">pdf</a>] 
+			  	(termin oddania: 28.04.2020)<br>
+			  	<strong>Seria 7</strong> (28.04.2020) [<a href="PFIV_seria07.pdf">pdf</a>] 
+			  	(termin oddania: 5.05.2020)<br>
+			    <strong>Seria 8</strong> (5.05.2020) [<a href="PFIV_seria08.pdf">pdf</a>] 
+			  	(termin oddania: 12.05.2020)<br>
+			  	<strong>Seria 9</strong> (12.05.2020) [<a href="PFIV_seria09.pdf">pdf</a>] 
+			  	(termin oddania: 19.05.2020)<br>
+			  	<strong>Seria 10</strong> (20.05.2020) [<a href="PFIV_seria10.pdf">pdf</a>] 
+			  	(termin oddania: 26.05.2020)<br>
+			  	<strong>Seria 11</strong> (5.06.2020) [<a href="PFIV_seria11.pdf">pdf</a>] 
+			  	(dodatkowa)<br>
+			  </p>
+
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+		 <h3> Suplementy</h3>
+	  </div>
+		<div class="col-9">
+			
+			<p> <strong>Skrypty z fizyki statystycznej i termodynamiki:</strong><br>
+				Skrypt z termodynamiki i fizyki statystycznej prof. Napiórkowskiego [<a href="http://www.fuw.edu.pl/~marnap/skryptFS.pdf">pdf</a>]<br>
+				Skrypt z fizyki statystycznej prof. Tonga z Uniwersytetu Cambridge [<a href="http://www.damtp.cam.ac.uk/user/tong/statphys/sp.pdf">pdf</a>]<br>
+				Skrypt z fizyki statystycznej prof. Schwarza z  Uniwersytetu Heidelberskiego [<a href="https://www.thphys.uni-heidelberg.de/~biophys/PDF/Skripte/StatPhys.pdf">pdf</a>]<br>
+				Skrypt z termodynamiki prof. Powersa z  Uniwersytetu Notre Dame w Indianie [<a href="https://www3.nd.edu/~powers/ame.20231/notes.pdf">pdf</a>]<br><br>
+
+				<strong>Podręczniki i zbiory zadań dostępne on-line:</strong><br>
+				R. Hołyst, A. Poniewierski, A. Ciach, <i>Termodynamika dla chemików, fizyków i inżynierów</i>, wyd. UKSW, 2005 [<a href="http://pepe.ichf.edu.pl/Thermodynamics/book.pdf">pdf</a>]<br>
+				S. J. Blundell, ‎K. M. Blundell, <i>Concepts in Thermal Physics</i>, Oxford, 2010 [<a href="http://bayanbox.ir/view/334073060328122555/thermalphysics-2ed-Blundell.pdf">pdf</a>]<br>
+				Yung-Kuo Lim, <i>Problems and Solutions on Thermodynamics and Statistical Mechanics</i>, World Scientific, 1990 [<a href="http://paginas.fisica.uson.mx/laura.yeomans/fiesta/lim.pdf">pdf</a>]<br>
+				<strong>H.B. Callen, <i>Thermodynamics and introduction to thermostatics</i>, John Wiley, 1985</strong><br><br>
+				GENERAL PRINCIPLES OF CLASSICAL THERMODYNAMICS<br>
+				01. The Problem and the Postulates [<a href="http://cvika.grimoar.cz/callen/callen_01.pdf">pdf</a>]<br>
+				02. The Conditions of Equilibrium [<a href="http://cvika.grimoar.cz/callen/callen_02.pdf">pdf</a>]<br>
+				03. Some Formal Relationships, and Sample Systems [<a href="http://cvika.grimoar.cz/callen/callen_03.pdf">pdf</a>]<br>
+				04. Reversible Processes and the Maximum Work Theorem [<a href="http://cvika.grimoar.cz/callen/callen_04.pdf">pdf</a>]<br>
+				05. Alternative Formulations and Legendre Transformations [<a href="http://cvika.grimoar.cz/callen/callen_05.pdf">pdf</a>]<br>
+				06. The Extremum Principle in the Legendre Transformed Representations [<a href="http://cvika.grimoar.cz/callen/callen_06.pdf">pdf</a>]<br>
+				07. Maxwell Relations [<a href="http://cvika.grimoar.cz/callen/callen_07.pdf">pdf</a>]<br>
+				08. Stability of Thermodynamic Systems [<a href="http://cvika.grimoar.cz/callen/callen_08.pdf">pdf</a>]<br>
+				09. First-Order Phase Transitions [<a href="http://cvika.grimoar.cz/callen/callen_09.pdf">pdf</a>]<br>
+				10. Critical Phenomena [<a href="http://cvika.grimoar.cz/callen/callen_10.pdf">pdf</a>]<br>
+				11. The Nernst Postulate [<a href="http://cvika.grimoar.cz/callen/callen_11.pdf">pdf</a>]<br>
+				12. Summary of Principles for General Systems [<a href="http://cvika.grimoar.cz/callen/callen_12.pdf">pdf</a>]<br>
+				13. Properties of Materials [<a href="http://cvika.grimoar.cz/callen/callen_13.pdf">pdf</a>]<br>
+				14. Irreversible Thermodynamics [<a href="http://cvika.grimoar.cz/callen/callen_14.pdf">pdf</a>]<br><br>
+				STATISTICAL MECHANICS<br>
+				15. Statistical Mechanics in the Entropy Representation: The Microanonical Formalism [<a href="http://cvika.grimoar.cz/callen/callen_15.pdf">pdf</a>]<br>
+				16. The Canonical Formalism: Statistical Mechanics in Helmholtz Representation [<a href="http://cvika.grimoar.cz/callen/callen_16.pdf">pdf</a>]<br>
+				17. Entropy and Disorder: Generalized Canonical Formulations [<a href="http://cvika.grimoar.cz/callen/callen_17.pdf">pdf</a>]<br>
+				18. Quantum Fluids [<a href="http://cvika.grimoar.cz/callen/callen_18.pdf">pdf</a>]<br>
+				19. Fluctuations [<a href="http://cvika.grimoar.cz/callen/callen_19.pdf">pdf</a>]<br>
+				20. Variational Properties, Perturbation Expansions, and Mean Field Theory [<a href="http://cvika.grimoar.cz/callen/callen_20.pdf">pdf</a>]<br><br>
+				FOUNDATIONS<br>
+				21. Postlude: Symmetry and the Conceptual Foundations of Thermostatistics [<a href="http://cvika.grimoar.cz/callen/callen_21.pdf">pdf</a>]<br>
+				Appendix [<a href="http://cvika.grimoar.cz/callen/callen_append.pdf">pdf</a>]<br>
+
+			</p>
+			<hr>
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-3">
+			 <h3> Literatura</h3>
+		  </div>
+			<div class="col-9">
+<p><strong>Zbiory zadań:</strong><br><br>
+
+Zadania z podęczników do fizyki termicznej i termodynamiki (patrz poniżej)<br>
+J. Walker, <i>Podstawy fizyki. Zbiór zadań</i>, PWN, 2008<br>
+A. Hennel, W. Szuszkiewicz, <i>Zadania i problemy z fizyki</i>, PWN, 1993<br>
+I. E. Irodow, I. W. Sawieljew, I. O. Zamsza, <i>Zbiór zadań z fizyki</i>, PWN, 1976<br>
+L. G. Grieczeko, W. I. Sugakow, O. F. Tomasiewicz, A. Fiedorcienko, <i>Zadania z fizyki teoretycznej</i>, PWN, 1975<br>
+A. N. Kucenko, J. W. Rublew, <i>Zbiór zadań z fizyki dla wyższych uczelni technicznych</i>, PWN, 1977<br>
+J. Kalisz, M. Massalska, J. M. Massalski,  <i>Zbiór zadań z fizyki z rozwiązaniami</i>, PWN, 1968<br>
+G. A. Bendrikow, B. B. Buchowcew, W. W. Kerżencew, G. J. Miakiszew, <i>Zadania z fizyki</i>, PWN, 1973<br>
+W. S. Wolkensztejn, <i>Zbiór zadań z fizyki</i>, PWN, 1974<br>
+Yung-Kuo Lim, <i>Problems and Solutions on Thermodynamics and Statistical Mechanics</i>, World Scientific, 1990<br>
+P. T. Landsberg, <i>Problems in Thermodynamics and Statistical Physics</i>, Dover, 1971<br>
+R. Kubo, <i>Thermodynamics: An Advanced Course with Problems and Solutions</i>, North-Holland, 1968<br>
+P. W. Atkins, C. A. Trapp, M. P. Cady, C. Giunta, <i>Chemia fizyczna. Zbiór zadań z rozwiązaniami</i>, PWN, 2001<br>
+E. E. Kisielewa, G. S. Karietnikow, I. W. Kudriaszow, <i>Zbiór zadań z chemii fizycznej</i>, PWN, 1971<br>
+H. E. Avery, D. J. Shaw, <i>Ćwiczenia rachunkowe z chemii fizycznej</i>, PWN, 1971<br>
+<br>
+
+<strong>Podręczniki:</strong><br><br>
+
+H.B. Callen, <i>Thermodynamics and introduction to thermostatics</i>, John Wiley, 1985<br>
+M.W. Zemansky <i>Heat and Thermodynamics</i>, McGraw-Hill, 1968<br>
+D.V. Schroeder <i>An Introduction to Thermal Physics</i>, Addison Wesley, 2000<br>
+D. Goodstein <i>Thermal Physics</i>, Cambridge, 2015<br>
+S. J. Blundell, ‎K. M. Blundell, <i>Concepts in Thermal Physics</i>, Oxford, 2010<br>
+J. Werle, <i>Termodynamika fenomenologiczna</i>, PWN, 1957<br>
+K. Gumiński, <i>Termodynamika</i>, PWN, 1972<br>
+K. Zalewski, <i>Wykłady z termodynamiki fenomenologicznej i statystycznej</i>, PWN, 1978<br>
+K. Rajmer, <i>Ciepło &#8594; zimno, czyli termodynamika fenomenologiczna, t. 1 i 2</i>, Sorus, 2013<br>
+A.K. Wróblewski, J.A. Zakrzewski, <i>Wstęp do Fizyki, tom 2, cz. II</i>, PWN, 1991<br>
+R.P. Feynman, R.B. Leighton, M. Sands, <i>Feynmana wykłady z fizyki tom I, cz. 2</i>, PWN, 2009<br>
+D.Halliday, R.Resnick, J.Walker, <i>Podstawy fizyki, tom 2</i>, PWN, 2003<br>
+K. Huang, <i>Podstawy fizyki statystycznej</i>, PWN, 2006<br>
+H. A. Buchdahl, <i>The Concepts of Classical Thermodynamics</i>, Cambridge, 1966<br>
+A. B. Pippard, <i>Elements of Classical Thermodynamics</i>, Cambridge, 1964<br> 
+E. Fermi, <i>Thermodynamics</i>, Dover, 1936<br>
+M. Kamińska, A. Witowski, J. Ginter <i>Wstęp do termodynamiki fenomenologicznej</i>, WUW, 2005<br>
+R. Hołyst, A. Poniewierski, A. Ciach, <i>Termodynamika dla chemików, fizyków i inżynierów</i>, wyd. UKSW, 2005<br>
+P. W. Atkins, <i>Chemia fizyczna</i>, PWN, 2016<br>
+K. Pigoń, Z. Ruziewicz <i>Chemia fizyczna, tom 1</i>, PWN, 2009<br>
+<br></p>
+			</div>
+		</div>
+
+
+	<footer>
+			&copy; Piotr Zdybel  |  <!-- Not required, but appreciated. --><a href="http://minimalcss.com">Minimal</a>  <img class="center" height=50px src="http://promocja.uw.edu.pl/wp-content/uploads/2015/06/PODSTAWOWY-1024x419.png">
+	</footer><!-- footer -->
+</div>
+</body>
+</html>
